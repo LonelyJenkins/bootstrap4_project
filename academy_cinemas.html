@@ -178,12 +178,22 @@
                         </fieldset>
                         <fieldset class="form-group">
                           <label for="email">Email: </label>
-                          <input type="email" class="form-control" id="email" placeholder="Email Address...">
+						  <!--Creating an add-on for the email field on the signup form-->
+						  <div class="input-group mb-3">
+							  <input type="email" class="form-control" id="email" placeholder="Email Address..." aria-label="Email Address" aria-describedby="basic-addon2">
+								  <div class="input-group-append">
+									<span class="input-group-text" id="basic-addon2">@example.com</span>
+								  </div>
+							</div>
                         </fieldset>
                         <fieldset class="form-group">
                           <label for="password">Password: </label>
                           <input type="password" class="form-control" id="password" placeholder="Password...">
                         </fieldset>
+						<!--Notice of password requirements for user-->
+						<div class="alert alert-primary" role="alert">
+							Password must contain one capital letter and number!
+						</div>
                     </form>
 
 
